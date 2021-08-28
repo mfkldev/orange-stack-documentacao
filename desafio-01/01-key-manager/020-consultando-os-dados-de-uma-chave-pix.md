@@ -11,11 +11,11 @@ Poderemos consultar uma chave Pix de duas maneiras diferentes. Portanto, devemos
 1. Para o nosso sistema KeyManager:
     - **Identificador do cliente** e **Pix ID** devem ser obrigatórios;
     - a chave Pix encontrada deve ser de propriedade do cliente;
-    - Caso a chave Pix não esteja devidamente [registrada no BCB](015-registrando-e-excluindo-chaves-pix-no-bcb.md), a mesma não poderá ter suas informações disponibilizadas abertamente, afinal trata-se de uma chave ainda inválida.
+    - Caso a chave Pix não esteja devidamente [registrada no BCB](015-registrando-e-excluindo-chaves-pix-no-bcb.md), ela não poderá ter suas informações disponibilizadas abertamente, afinal trata-se de uma chave ainda inválida.
    
 2. Para outros microsserviços e sistemas:
     - **Chave Pix** deve ser obrigatória e possuir tamanho máximo de 77 caracteres;
-    - No caso de nosso sistema **não possuir** a chave Pix informada, a mesma deve ser consultada no [sistema Pix do BCB](015-registrando-e-excluindo-chaves-pix-no-bcb.md).
+    - No caso de nosso sistema **não possuir** a chave Pix informada, ela deve ser consultada no [sistema Pix do BCB](015-registrando-e-excluindo-chaves-pix-no-bcb.md).
 
 A ideia é que nosso sistema KeyManager consiga consultar chaves por Pix ID para seus usuários enquanto outros sistemas e serviços possam consultar os dados de qualquer chave pela própria chave Pix para validação de dados ou mesmo para exibir informações.
 
